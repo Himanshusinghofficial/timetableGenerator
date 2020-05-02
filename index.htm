@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Table Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>Time Table Generator</h1>
+    
+    <div class="getDetails">
+      <div class="daysGetter">
+        <label for="getDays">Enter the number of days</label>
+        <input type="number" min="1" max="7" step="1" id="getDays">
+      </div>
+      
+      <div class="inputGetter">
+        <label for="theorySubjects">Enter the number of theory subjects</label>
+        <input
+          type="number"
+          name="theorySubjects"
+          id="theorySubjects"
+          min="0"
+          step="1"
+        />
+        <input type="button" value="Go" class="nextStepTheory" />
+        <input type="button" value="+" class="addTheory" />
+        <input type="button" value="-" class="subTheory" />
+        <input type="button" value="Apply to all" class="applyTheory" />
+        <input type="button" value="Resest" class="resetTheory" />
+        <input type="button" value="Delete All" class="deleteTheory">
+      </div>
+      <form action="" id="theoryForm">
+      <div class="theoryWrapper">
+        <div class="theoryDetails"></div>
+      </div>
+    </form>
+
+    
+      <div class="inputGetter">
+        <label for="practicalSubjects"
+          >Enter the number of practical subjects</label
+        >
+        <input
+          type="number"
+          name="practicalSubjects"
+          id="practicalSubjects"
+          min="0"
+          step="1"
+        />
+        <input type="button" value="Go" class="nextStepPractical" />
+        <input type="button" value="+" class="addPractical" />
+        <input type="button" value="-" class="subPractical" />
+        <!-- <input type="button" value="Apply to all" class="applyPractical" /> -->
+        <input type="button" value="Resest" class="resetPractical" />
+        <input type="button" value="Delete All" class="deletePractical">
+      </div>
+      <form action="" id="practicalForm">
+      <div class="practicalWrapper">
+        <div class="practicalDetails"></div>
+      </div>
+    </div>
+  </form>
+  <div class="tableWrapper">
+    <input type="button" class="generate" value="Generate"/>
+    <!-- <button>Generate</button> -->
+    <div class="timeTable">
+      <div class="table">Table will be generated here</div>
+    </div>
+  </div>
+    
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

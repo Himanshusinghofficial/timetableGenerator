@@ -1,0 +1,183 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #052846;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  outline: none;
+  border: 0;
+}
+
+input[type="button"],
+input[type="reset"] {
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 3px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  background: #cf009b;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+
+input[type="button"]:hover,
+input[type="reset"]:hover {
+  -webkit-box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  background: #ff00bf;
+}
+
+.daysGetter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.daysGetter input {
+  margin: 10px;
+}
+
+.inputGetter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.inputGetter label,
+.inputGetter input {
+  margin: 5px;
+}
+
+.theoryDetails,
+.practicalDetails {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  padding: 20px;
+}
+
+.theoryDetails .detailCard,
+.practicalDetails .detailCard {
+  background: #073c64;
+  padding: 25px;
+  margin: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  position: relative;
+}
+
+.theoryDetails .detailCard button,
+.practicalDetails .detailCard button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: 0;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 25px;
+  outline: none;
+  cursor: pointer;
+}
+
+.theoryDetails .detailCard button:hover,
+.practicalDetails .detailCard button:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.theoryDetails .detailCard input,
+.practicalDetails .detailCard input {
+  padding: 5px;
+  border: 0;
+  border-bottom: 1px solid #0083cf;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.theoryDetails .detailCard input:focus,
+.practicalDetails .detailCard input:focus {
+  border-bottom: 2px solid #0083cf;
+}
+
+.tableWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.tableWrapper .timeTable {
+  margin: 20px;
+}
+
+.tableWrapper table {
+  border-collapse: collapse;
+  background: #073c64;
+}
+
+.tableWrapper table td:first-child {
+  font-weight: bold;
+  background: #cf009b;
+}
+
+.tableWrapper table td[colspan="2"] {
+  background: #0b5a97;
+}
+
+.tableWrapper table td {
+  text-align: center;
+  padding: 10px;
+  width: 100px;
+  border: 2px solid #052846;
+}
+/*# sourceMappingURL=style.css.map */
